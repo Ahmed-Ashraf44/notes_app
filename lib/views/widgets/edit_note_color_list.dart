@@ -1,22 +1,19 @@
-
-
 import 'package:flutter/material.dart';
-import 'package:notes_app/constants.dart';
-import 'package:notes_app/models/notes_model.dart';
-import 'package:notes_app/views/widgets/color_item.dart';
+import 'package:Notes/constants.dart';
+import 'package:Notes/models/notes_model.dart';
+import 'package:Notes/views/widgets/color_item.dart';
 
 class EditNoteColorList extends StatefulWidget {
- const EditNoteColorList({super.key, required this.notes});
-   
+  const EditNoteColorList({super.key, required this.notes});
+
   final NotesModel notes;
   @override
   State<EditNoteColorList> createState() => _ColorListState();
 }
 
 class _ColorListState extends State<EditNoteColorList> {
-
- late int currentIndex;
- @override
+  late int currentIndex;
+  @override
   void initState() {
     currentIndex = kColor.indexOf(Color(widget.notes.color));
     super.initState();
@@ -39,8 +36,7 @@ class _ColorListState extends State<EditNoteColorList> {
               onTap: () {
                 currentIndex = index;
                 widget.notes.color = kColor[currentIndex].value;
-                setState(() { 
-                });
+                setState(() {});
               },
               child: Coloritems(
                   color: kColor[index], isActive: currentIndex == index),

@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
-import 'package:notes_app/constants.dart';
-import 'package:notes_app/models/notes_model.dart';
+import 'package:Notes/constants.dart';
+import 'package:Notes/models/notes_model.dart';
 
 part 'notes_state.dart';
 

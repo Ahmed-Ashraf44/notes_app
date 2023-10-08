@@ -3,11 +3,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:notes_app/cubits/notes/notes_cubit.dart';
-import 'package:notes_app/helper/show_snakbar.dart';
-import 'package:notes_app/helper/text_span_color.dart';
-import 'package:notes_app/models/notes_model.dart';
-import 'package:notes_app/views/edit_notes_view.dart';
+import 'package:Notes/cubits/notes/notes_cubit.dart';
+import 'package:Notes/helper/show_snakbar.dart';
+import 'package:Notes/helper/text_span_color.dart';
+import 'package:Notes/models/notes_model.dart';
+import 'package:Notes/views/edit_notes_view.dart';
 
 class NotesItem extends StatelessWidget {
   NotesItem({super.key, required this.notes, this.query});

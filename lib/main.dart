@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:notes_app/constants.dart';
-import 'package:notes_app/cubits/notes/notes_cubit.dart';
-import 'package:notes_app/cubits/switch_theme/switch_theme_cubit.dart';
-import 'package:notes_app/models/notes_model.dart';
-import 'package:notes_app/simple_bloc_observer.dart';
-import 'package:notes_app/views/notes_view.dart';
+import 'package:Notes/constants.dart';
+import 'package:Notes/cubits/notes/notes_cubit.dart';
+import 'package:Notes/cubits/switch_theme/switch_theme_cubit.dart';
+import 'package:Notes/models/notes_model.dart';
+import 'package:Notes/simple_bloc_observer.dart';
+import 'package:Notes/views/notes_view.dart';
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 
 void main() async {
