@@ -6,7 +6,7 @@ import 'package:notes_app/cubits/notes/notes_cubit.dart';
 import 'package:notes_app/cubits/switch_theme/switch_theme_cubit.dart';
 import 'package:notes_app/models/notes_model.dart';
 import 'package:notes_app/simple_bloc_observer.dart';
-import 'package:notes_app/views/notes_view.dart';
+import 'package:notes_app/views/first_view.dart';
 
 void main() async {
   await Hive.initFlutter();
@@ -32,7 +32,7 @@ class NotesApp extends StatelessWidget {
           return MaterialApp(
             debugShowCheckedModeBanner: false,
             theme: state.themeData,
-            home: const NotesView(),
+            home: const FirstView(),
           );
         },
       ),
