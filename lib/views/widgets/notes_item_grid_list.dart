@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:Notes/cubits/notes/notes_cubit.dart';
-import 'package:Notes/models/notes_model.dart';
-import 'package:Notes/views/widgets/note_item_grid.dart';
+import 'package:notes_app/cubits/notes/notes_cubit.dart';
+import 'package:notes_app/models/notes_model.dart';
+import 'package:notes_app/views/widgets/note_item_grid.dart';
 
 class NotesItemGridList extends StatelessWidget {
   const NotesItemGridList({super.key});

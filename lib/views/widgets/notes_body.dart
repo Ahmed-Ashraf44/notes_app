@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:Notes/cubits/notes/notes_cubit.dart';
-import 'package:Notes/cubits/switch_theme/switch_theme_cubit.dart';
-import 'package:Notes/models/notes_model.dart';
-import 'package:Notes/views/widgets/custom_search_icon.dart';
-import 'package:Notes/views/widgets/notes_item_grid_list.dart';
-import 'package:Notes/views/widgets/notes_item_list.dart';
-import 'package:Notes/views/widgets/search_item.dart';
+import 'package:notes_app/cubits/notes/notes_cubit.dart';
+import 'package:notes_app/cubits/switch_theme/switch_theme_cubit.dart';
+import 'package:notes_app/models/notes_model.dart';
+import 'package:notes_app/views/widgets/custom_search_icon.dart';
+import 'package:notes_app/views/widgets/notes_item_grid_list.dart';
+import 'package:notes_app/views/widgets/notes_item_list.dart';
+import 'package:notes_app/views/widgets/search_item.dart';
 
 class NotesBody extends StatefulWidget {
   const NotesBody({super.key});

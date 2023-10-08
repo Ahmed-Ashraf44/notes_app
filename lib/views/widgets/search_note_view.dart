@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:Notes/cubits/search_note/search_note_cubit.dart';
-import 'package:Notes/models/notes_model.dart';
-import 'package:Notes/views/widgets/notes_item.dart';
-import 'package:Notes/views/widgets/notes_item_list.dart';
+import 'package:notes_app/cubits/search_note/search_note_cubit.dart';
+import 'package:notes_app/models/notes_model.dart';
+import 'package:notes_app/views/widgets/notes_item.dart';
+import 'package:notes_app/views/widgets/notes_item_list.dart';
 
 class SearchFinder extends StatelessWidget {
   final String query;

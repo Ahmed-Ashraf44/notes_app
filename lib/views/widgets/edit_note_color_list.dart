@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:Notes/constants.dart';
-import 'package:Notes/models/notes_model.dart';
-import 'package:Notes/views/widgets/color_item.dart';
+import 'package:notes_app/constants.dart';
+import 'package:notes_app/models/notes_model.dart';
+import 'package:notes_app/views/widgets/color_item.dart';
 
 class EditNoteColorList extends StatefulWidget {
   const EditNoteColorList({super.key, required this.notes});

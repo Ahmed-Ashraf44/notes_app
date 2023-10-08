@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:Notes/views/widgets/search_note_view.dart';
+import 'package:notes_app/views/widgets/search_note_view.dart';
 
 class SearchItem extends SearchDelegate {
   @override
