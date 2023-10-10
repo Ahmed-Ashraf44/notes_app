@@ -6,8 +6,7 @@ import 'package:notes_app/cubits/notes/notes_cubit.dart';
 import 'package:notes_app/cubits/switch_theme/switch_theme_cubit.dart';
 import 'package:notes_app/models/notes_model.dart';
 import 'package:notes_app/simple_bloc_observer.dart';
-import 'package:notes_app/views/notes_view.dart';
-import 'package:animated_splash_screen/animated_splash_screen.dart';
+import 'package:notes_app/views/animated_splash_view.dart';
 
 void main() async {
   await Hive.initFlutter();
@@ -33,18 +32,7 @@ class NotesApp extends StatelessWidget {
           return MaterialApp(
             debugShowCheckedModeBanner: false,
             theme: state.themeData,
-            home: AnimatedSplashScreen(
-              splashTransition: SplashTransition.scaleTransition,
-              splashIconSize: 200,
-              backgroundColor: Colors.white,
-              splash: const CircleAvatar(
-                radius: 90,
-                backgroundImage: AssetImage(
-                  'assets/images/splash.jpg',
-                ),
-              ),
-              nextScreen: const NotesView(),
-            ),
+            home: const AnimatedSplashView(),
           );
         },
       ),
