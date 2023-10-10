@@ -35,8 +35,9 @@ class NotesItemListSearch extends StatelessWidget {
       create: (context) => SearchNoteCubit(),
       child: BlocBuilder<SearchNoteCubit, SearchNoteState>(
         builder: (context, state) {
-          BlocProvider.of<SearchNoteCubit>(context)
-              .searchItem(query.toLowerCase());
+          BlocProvider.of<SearchNoteCubit>(context).searchItem(
+            query.toLowerCase(),
+          );
           List<NotesModel>? result =
               BlocProvider.of<SearchNoteCubit>(context).notes ?? [];
           return Padding(

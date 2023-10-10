@@ -12,12 +12,10 @@ class SearchNoteCubit extends Cubit<SearchNoteState> {
   List<NotesModel>? notes;
   searchItem(String searchTerm) {
     var noteBox = Hive.box<NotesModel>(kNotesBox);
-    notes = noteBox.values
-            .where((element) => element.title.contains(searchTerm))
-            .toList() +
-        noteBox.values
-            .where((element) => element.subTitle.contains(searchTerm))
-            .toList();
+    notes = noteBox.values.where((element) {
+      return element.title.contains(searchTerm) ||
+          element.subTitle.contains(searchTerm);
+    }).toList();
     emit(SearchNoteSuccess());
   }
 }
